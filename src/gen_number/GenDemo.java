@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//my mini generator
 public class GenDemo implements ActionListener {
 
     JFrame frame = new JFrame();
@@ -54,7 +53,6 @@ public class GenDemo implements ActionListener {
             textField.setText(String.valueOf(number));
         }
     }
-
     public static void main(String[] args) {
         new GenDemo();
     }

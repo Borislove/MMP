@@ -13,7 +13,7 @@ import java.io.IOException;
 // TODO: 13.03.2021  group buttons
 // center image on label
 public class FunnyNumbers implements ActionListener {
-    BufferedImage image = ImageIO.read(new File("e:\\javadoc\\cursor_5.png"));
+    BufferedImage image = ImageIO.read(new File("src\\funny_numbers\\source\\images\\cursor_5.png"));
 
     private static int button_language_number = 2; //   1 - en , 2 - ru
 
@@ -112,7 +112,8 @@ public class FunnyNumbers implements ActionListener {
         panel.setBounds(170, 10, 250, 250);
 
         //add icon label
-        label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+      // label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+       label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
         panel.add(label);
         //
 
@@ -149,16 +150,16 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_1) {
             System.out.println("click button_1");
             numberForImage = 1;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
             System.out.println("numberForSound = " + numberForSound);
             //sound
             ///////////////
 
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\1.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\1.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\1.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\1.wav");
             }
             AudioInputStream audioStream = null;
             try {
@@ -189,14 +190,14 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_2) {
             System.out.println("click button_2");
             numberForImage = 2;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
 
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\2.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\2.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\2.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\2.wav");
             }
             AudioInputStream audioStream = null;
             try {
@@ -226,14 +227,14 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_3) {
             System.out.println("click button_3");
             numberForImage = 3;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
 
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\3.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\3.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\3.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\3.wav");
             }
 
             AudioInputStream audioStream = null;
@@ -264,14 +265,14 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_4) {
             System.out.println("click button_4");
             numberForImage = 4;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
 
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\4.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\4.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\4.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\4.wav");
             }
 
             AudioInputStream audioStream = null;
@@ -302,13 +303,13 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_5) {
             System.out.println("click button_5");
             numberForImage = 5;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\5.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\5.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\5.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\5.wav");
             }
 
             AudioInputStream audioStream = null;
@@ -339,13 +340,13 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_6) {
             System.out.println("click button_6");
             numberForImage = 6;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\6.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\6.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\6.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\6.wav");
             }
 
             AudioInputStream audioStream = null;
@@ -374,13 +375,13 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_7) {
             System.out.println("click button_7");
             numberForImage = 7;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\7.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\7.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\7.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\7.wav");
             }
 
             AudioInputStream audioStream = null;
@@ -409,12 +410,12 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_8) {
             System.out.println("click button_8");
             numberForImage = 8;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\8.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\8.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\8.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\8.wav");
             }
             //sound
             AudioInputStream audioStream = null;
@@ -443,13 +444,13 @@ public class FunnyNumbers implements ActionListener {
         if (e.getSource() == button_9) {
             System.out.println("click button_9");
             numberForImage = 9;
-            label.setIcon(new ImageIcon("E:\\MMP\\src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
+            label.setIcon(new ImageIcon("src\\funny_numbers\\source\\images\\" + numberForImage + ".png"));
             //sound
             if (button_language_number == 2) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\ru\\9.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\ru\\9.wav");
             }
             if (button_language_number == 1) {
-                file = new File("E:\\MMP\\src\\funny_numbers\\source\\sounds\\en\\9.wav");
+                file = new File("src\\funny_numbers\\source\\sounds\\en\\9.wav");
             }
             AudioInputStream audioStream = null;
             try {

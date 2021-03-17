@@ -7,7 +7,6 @@ import javax.swing.*;
 //main class
 public class FunnyNumbers extends JFrame {
 
-
     public FunnyNumbers() {
         //window
         /////////////////////
@@ -17,8 +16,21 @@ public class FunnyNumbers extends JFrame {
         this.setLocationRelativeTo(null);
         this.setLayout(null);
 
-      //  add(new OptionPanel());
+        //  add(new OptionPanel());
         add(new LanguagePanel());
+
+        add(new SoundStyle());
+
+        add(new CheckSound());
+
+        add(new DropMenuImage());
+
+        add(new ImagePanel());
+
+        add(new CharacterPanel());
+        add(new MessageLabel());
+
+
         /////////////////////
 
         //add buttons

@@ -1,9 +1,14 @@
 package funny_numbers_1.buttons;
 
+import funny_numbers_1.Settings;
+
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 
 public class Button_1 extends JButton implements ActionListener {
 
@@ -16,6 +21,8 @@ public class Button_1 extends JButton implements ActionListener {
     //размер кнопки
     int width = 45;
     int height = 45;
+
+    File file;
 
     //цвет фона
     // String colorBackground = "white";
@@ -32,11 +39,37 @@ public class Button_1 extends JButton implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        /*if (e.getSource() == Button_1.this) {
-            System.out.println("123");
-        }*/
         if (e.getSource() == this) {
             System.out.println(buttonName);
+
+            if (Settings.switchVoice) {
+                file = new File("E:\\MMP\\src\\funny_numbers_1\\source\\sounds\\ru\\male\\1.wav");
+            } else {
+                file = new File("E:\\MMP\\src\\funny_numbers_1\\source\\sounds\\ru\\female\\1.wav");
+            }
+            AudioInputStream audioStream = null;
+            try {
+                audioStream = AudioSystem.getAudioInputStream(file);
+            } catch (UnsupportedAudioFileException ex) {
+                ex.printStackTrace();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            Clip clip = null;
+            try {
+                clip = AudioSystem.getClip();
+            } catch (LineUnavailableException ex) {
+                ex.printStackTrace();
+            }
+            try {
+                clip.open(audioStream);
+            } catch (LineUnavailableException ex) {
+                ex.printStackTrace();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            clip.start();
+
         }
     }
 }

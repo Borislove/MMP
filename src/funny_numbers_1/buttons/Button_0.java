@@ -1,5 +1,7 @@
 package funny_numbers_1.buttons;
 
+import funny_numbers_1.ImagePanel;
+import funny_numbers_1.MessageLabel;
 import funny_numbers_1.Settings;
 
 import javax.sound.sampled.*;
@@ -51,6 +53,14 @@ public class Button_0 extends JButton implements ActionListener {
             /*if (Settings.button_language_number == 1) {
                 file = new File("E:\\MMP\\src\\funny_numbers_1\\source\\sounds\\ru\\female\\1.wav");
             }*/
+
+
+
+
+            /////////IMAGE/////////////
+            ImagePanel.label.setIcon(new ImageIcon("E:\\картиночки\\0.png"));
+            /////////MESSAGE IMAGE////
+            MessageLabel.label.setIcon(new ImageIcon("E:\\javadoc\\message\\0.png"));
 
 
             /////SWITCH VOICE///////

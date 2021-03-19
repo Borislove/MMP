@@ -1,5 +1,7 @@
 package funny_numbers_1.buttons;
 
+import funny_numbers_1.ImagePanel;
+import funny_numbers_1.MessageLabel;
 import funny_numbers_1.Settings;
 
 import javax.sound.sampled.*;
@@ -38,6 +40,13 @@ public class Button_2 extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this) {
             System.out.println(buttonName);
+
+            /////////IMAGE/////////////
+            ImagePanel.label.setIcon(new ImageIcon("E:\\картиночки\\2.png"));
+            /////////MESSAGE IMAGE////
+            MessageLabel.label.setIcon(new ImageIcon("E:\\javadoc\\message\\2.png"));
+            /////////MESSAGE IMAGE////
+            MessageLabel.label.setIcon(new ImageIcon("E:\\javadoc\\message\\2.png"));
 
             /////SWITCH VOICE///////
             if (Settings.switchVoice) {

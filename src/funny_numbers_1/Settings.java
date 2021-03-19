@@ -4,5 +4,5 @@ public class Settings {
 
     public static int button_language_number = 1; //ru
 
-    public static boolean switchVoice = false; //male voice/female voice // true male
+    public static boolean switchVoice = true; //male voice/female voice // true male
 }

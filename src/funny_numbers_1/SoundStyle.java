@@ -6,8 +6,8 @@ import java.awt.*;
 public class SoundStyle extends JPanel {
 
 
-    JRadioButton maleButton = new JRadioButton("Male", false);
-    JRadioButton femaleButton = new JRadioButton("Female", true);
+    JRadioButton maleButton = new JRadioButton("Male", true);
+    JRadioButton femaleButton = new JRadioButton("Female", false);
 
     SoundStyle() {
        // setBackground(Color.orange);

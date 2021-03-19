@@ -7,7 +7,7 @@ public class DropMenuImage extends JPanel {
 
     JLabel label;
 
-    String[] imageString = {"цифры", "грибочки", "конфеты", "бабочки"};
+    String[] imageString = {"грибочки", "цифры", "конфеты", "бабочки"};
     JComboBox imageList = new JComboBox(imageString);
 
     DropMenuImage() {

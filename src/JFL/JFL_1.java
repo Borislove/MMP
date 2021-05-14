@@ -22,7 +22,7 @@ public class JFL_1 extends JFrame {
         this.setVisible(true);
     }
 
-    class Navi extends JPanel {
+    static class Navi extends JPanel {
 
         // String navigation[] = {"один", "два", "три", "четыре", "пять"};
 

@@ -12,12 +12,16 @@ public class JFL extends JFrame {
 
     public JFL() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         this.setSize(600, 450);
         this.setTitle("JFL");
         this.setLocationRelativeTo(null);
         this.setLayout(null);
 
-        add(new Navi());
+        //add(new Navi());
+        //   add(new Message());
+        getContentPane().add(new Navi(), BorderLayout.WEST);
+        //getContentPane().add(new Message(), BorderLayout.WEST);
         add(new Message());
 
         this.setVisible(true);
@@ -73,10 +77,9 @@ public class JFL extends JFrame {
 
     class Message extends JPanel {
         Message() {
-
             add(label);
             label.setText("Текст текст , куча текста, еще текст...");
-          //  label.setLayout(new FlowLayout());
+
             setBackground(Color.lightGray);
             setBounds(100, 0, 600, 450);
             setBorder(new LineBorder(Color.white, 1, false));

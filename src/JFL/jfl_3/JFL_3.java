@@ -3,6 +3,7 @@ package JFL.jfl_3;
 import javax.swing.*;
 import java.awt.*;
 
+//текст String
 public class JFL_3 extends JFrame {
 
     JDesktopPane desktop;

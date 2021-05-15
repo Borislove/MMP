@@ -4,16 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TextWindow extends JPanel {
+
     JInternalFrame textWindow;
 
-    String txt = "Hello my programm!" + "\n" +
-            "textxtxtxtxtttttttt" + "\n" +
-            "textxtxtxtxtttttttt" + "\n" +
-            "textxtxtxtxtttttttt" + "\n" +
-            "textxtxtxtxtttttttt" + "\n" +
-            "textxtxtxtxtttttttt";
-
-    JTextArea textArea = new JTextArea(txt);
+    public static JTextArea textArea = new JTextArea();
 
     TextWindow() {
         //-----------------------------

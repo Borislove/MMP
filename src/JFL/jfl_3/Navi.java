@@ -29,7 +29,7 @@ public class Navi extends JPanel {
 
         public NaviPanel() {
             String[] navigationString = {
-                    "Text 0123123123",
+                    "Text 0",
                     "Text 1",
                     "Text 2",
                     "Text 3",
@@ -59,7 +59,7 @@ public class Navi extends JPanel {
                     "Text 27",
                     "Text 28",
                     "Text 29",
-                    "Text 30222222",
+                    "Text 30",
             };
             JList<String> listMenu = new JList<>(navigationString);
             listMenu.setLayout(null);

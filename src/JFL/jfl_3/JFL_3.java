@@ -25,6 +25,9 @@ public class JFL_3 extends JFrame {
         //класс  навигации
         desktop.add(new Navi().navigation);
 
+        //класс текстового окна
+        desktop.add(new TextWindow().textWindow);
+
         setVisible(true);
     }
 

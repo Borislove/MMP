@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class LanguagePanel extends JPanel {
 
-    //    Image image = new ImageIcon("e:\\javadoc\\test.png").getImage();
+    //    Image image = new ImageIcon("e:\\javadoc\\test.txt.png").getImage();
 
     //private String[] languages = {"Русский", "English"};
 

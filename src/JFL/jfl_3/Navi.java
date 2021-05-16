@@ -16,6 +16,7 @@ public class Navi extends JPanel {
         //Container nav = navigation.getContentPane();
         //  nav.setLayout(new FlowLayout());
         navigation.setSize(150, JFL_3.height - 50);
+        navigation.setLocation(0,JFL_3.yLocationWindow);
         navigation.setBackground(Color.white);
         navigation.add(listMenu);
 

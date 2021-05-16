@@ -7,8 +7,10 @@ import java.awt.*;
 public class JFL_3 extends JFrame {
 
     JDesktopPane desktop;
-    private int width = 800;
+    protected static int width = 800;
     protected static int height = 600;
+
+    protected static int yLocationWindow = 30;
 
     public JFL_3() {
 
@@ -28,6 +30,8 @@ public class JFL_3 extends JFrame {
 
         //класс текстового окна
         desktop.add(new TextWindow().textWindow);
+
+        desktop.add(new SettingsPanel());
 
         setVisible(true);
     }

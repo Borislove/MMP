@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class TextWindow extends JPanel {
 
-    JInternalFrame textWindow;
+    protected static JInternalFrame textWindow;
 
     public static JTextArea textArea = new JTextArea();
 
@@ -17,6 +17,8 @@ public class TextWindow extends JPanel {
         textArea.setLineWrap(true);
         //шрифт, размер по умолчанию
         textArea.setFont(new Font("Arial", Font.PLAIN, 20));
+        textArea.setBackground(Color.black);
+        textArea.setForeground(Color.green);
         //-----------------------------
         textWindow = new JInternalFrame("описание", true, false, true, true);
         textWindow.setSize(610, JFL_3.height - 50);

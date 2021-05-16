@@ -6,7 +6,7 @@ import java.awt.*;
 public class Navi extends JPanel {
 
     public static JList<String> listMenu = new JList<>(TextNavi.navigationString);
-    JInternalFrame navigation;
+    protected static JInternalFrame navigation;
 
     Navi() {
         NaviPanel listMenu = new NaviPanel();

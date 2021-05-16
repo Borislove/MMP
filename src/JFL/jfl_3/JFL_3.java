@@ -4,40 +4,39 @@ import javax.swing.*;
 import java.awt.*;
 
 //текст String
-public class JFL_3 extends JFrame {
+public class JFL_3 {
 
-    JDesktopPane desktop;
+    protected static JDesktopPane desktop;
     protected static int width = 800;
     protected static int height = 600;
 
     protected static int yLocationWindow = 30;
 
-    public JFL_3() {
+    protected static JFrame frame = new JFrame();
 
-        Container c = getContentPane();
+    public JFL_3() {
+        Container c = frame.getContentPane();
         desktop = new JDesktopPane();
         c.add(desktop);
 
         //setup window
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(width, height);
-        setTitle("JFL_3");
-        setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        frame.setSize(width, height);
+        frame.setTitle("Guide");
+        frame.setLocationRelativeTo(null);
         //  setLayout(null);
 
         //класс  навигации
-        desktop.add(new Navi().navigation);
+        this.desktop.add(new Navi().navigation);
 
         //класс текстового окна
-        desktop.add(new TextWindow().textWindow);
+        this.desktop.add(new TextWindow().textWindow);
 
-        desktop.add(new SettingsPanel());
+        //класс настроек панели
+        this.desktop.add(new SettingsPanel());
 
-        setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        new JFL_3();
+        frame.setVisible(true);
     }
 }
 

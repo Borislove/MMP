@@ -5,11 +5,16 @@ import java.awt.event.MouseEvent;
 
 public class ListenerNavi extends MouseAdapter {
 
-    String str = " ";
+    protected static String str = " ";
+
+    static {
+        System.out.println(ListenerNavi.class + " загружен");
+    }
 
     @Override
     public void mouseClicked(MouseEvent ev) {
         //TextWindow.textArea.setText(Navi.listMenu.getSelectedValue());
+        System.out.println("str length = " + ListenerNavi.str.length());
 
         switch (Navi.listMenu.getSelectedValue()) {
 
@@ -53,7 +58,9 @@ public class ListenerNavi extends MouseAdapter {
                 break;
             //----------------------------------------------------//
             case "Функция":
-                str = "Функция - штука сложная.";
+                str = "Функция - штука сложная." + "\n" +
+                        "не должна превышать 64кб?"
+                ;
                 TextWindow.textArea.setText(str);
                 break;
 

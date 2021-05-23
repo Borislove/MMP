@@ -49,12 +49,13 @@ public class SettingsPanel extends JPanel {
             if (e.getSource() == button) {
                 System.out.println("click");
 
-                new MainWindow();
 
                 Navi.navigation.dispose();
                 TextWindow.textWindow.dispose();
                 JFL_3.frame.dispose();
                 JFL_3.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+                new MainWindow();
             }
         }
     }

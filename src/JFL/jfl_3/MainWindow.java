@@ -45,14 +45,19 @@ public class MainWindow extends JFrame {
                 frame.dispose();
                 System.err.println(MainWindow.class + " dispose");
 
+                Navi.listMenu = new JList<>(TextNavi.navigationString);
                 new JFL_3();
             }
 
             if (e.getSource() == magic) {
-                System.out.println("magic pressed");
+              /*  System.out.println("magic pressed");
                 JOptionPane.showMessageDialog(null, "trollololololo");
                 frame.dispose();
-                System.out.println("опа магия");
+                System.out.println("опа магия");*/
+
+                Navi.listMenu = new JList<>(TestClass.navigationStringTestClass);
+                new JFL_3();
+
             }
         }
     }

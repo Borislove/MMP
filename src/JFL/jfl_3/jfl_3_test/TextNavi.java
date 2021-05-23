@@ -1,4 +1,4 @@
-package JFL.jfl_3;
+package JFL.jfl_3.jfl_3_test;
 
 public class TextNavi {
 

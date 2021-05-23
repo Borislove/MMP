@@ -5,10 +5,12 @@ import java.awt.*;
 
 public class Navi extends JPanel {
 
-    public static JList<String> listMenu = new JList<>(TextNavi.navigationString);
+    //public static JList<String> listMenu = new JList<>(TextNavi.navigationString);
+    public static JList<String> listMenu;
     protected static JInternalFrame navigation;
 
-    Navi() {
+    public Navi() {
+
         NaviPanel listMenu = new NaviPanel();
         //-----------------------------
         //навигация настройки окна
@@ -16,7 +18,7 @@ public class Navi extends JPanel {
         //Container nav = navigation.getContentPane();
         //  nav.setLayout(new FlowLayout());
         navigation.setSize(150, JFL_3.height - 50);
-        navigation.setLocation(0,JFL_3.yLocationWindow);
+        navigation.setLocation(0, JFL_3.yLocationWindow);
         navigation.setBackground(Color.white);
         navigation.add(listMenu);
 
